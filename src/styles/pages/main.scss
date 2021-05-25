@@ -1846,6 +1846,11 @@ a.asoc {
         max-width: 25px;
     }
 
+    .voice {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
     .voice-description {
         width: 93%;
     }
@@ -1957,6 +1962,10 @@ a.asoc {
 
     .voice-video {
         height: fit-content;
+    }
+
+    .voice-video iframe {
+        height: initial;
     }
 }
 
