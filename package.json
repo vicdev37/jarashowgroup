@@ -22,6 +22,7 @@
     "babel-preset-es2015": "^6.24.1",
     "babel-preset-stage-0": "^6.24.1",
     "cssnano": "^4.1.10",
+    "fslightbox": "^3.2.3",
     "parcel-bundler": "^1.12.3",
     "pug": "^2.0.3",
     "push-dir": "^0.4.1",
@@ -31,9 +32,13 @@
     "@babel/runtime": "^7.5.5",
     "autoprefixer": "^9.5.1",
     "jquery": "^3.5.1",
+    "jquery-mask-plugin": "^1.14.16",
+    "lightbox2": "^2.11.3",
+    "lightgallery.js": "^1.4.0",
     "normalize.css": "^8.0.1",
     "parcel-plugin-custom-dist-structure": "^1.1.3",
-    "postcss-modules": "^1.4.1"
+    "postcss-modules": "^1.4.1",
+    "sweetalert2": "^11.0.11"
   },
   "customDistStructure": {
     "config": {

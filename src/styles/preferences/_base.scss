@@ -1,7 +1,7 @@
-@include font-face('Raleway', "../fonts/ralewayregular", $regular, normal);
-@include font-face('Raleway', "../fonts/ralewaysemibold", $bold, normal);
-@include font-face('Raleway', "../fonts/ralewaylight", $thin, normal);
-@include font-face('TTMoons', "../fonts/TTMoons-Thin", $regular, normal);
+@include font-face('Helvetica', "../fonts/HelveticaRegular", $regular, normal);
+@include font-face('Helvetica', "../fonts/HelveticaNeueCyr-Roman", $regular, normal);
+@include font-face('IBMP', "../fonts/IBMPlexSerif-SemiBold", $bold, normal);
+
 
 * {
   box-sizing: border-box;

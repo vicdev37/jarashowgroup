@@ -2,17 +2,515 @@ extends ../layout/layout.pug
 
 block content
   main.main
-    .font-regular
-      | ELLANSÉ® предназначен для субдермальных инъекций. Благодаря своей когезивности, ELLANSÉ® может легко приобретать необходимую форму, обеспечивая большую точность при коррекции формы и контуров
-    .font-bold
-      | ELLANSÉ® предназначен для субдермальных инъекций. Благодаря своей когезивности, ELLANSÉ® может легко приобретать необходимую форму, обеспечивая большую точность при коррекции формы и контуров
-    .font-medium
-      | ELLANSÉ® предназначен для субдермальных инъекций. Благодаря своей когезивности, ELLANSÉ® может легко приобретать необходимую форму, обеспечивая большую точность при коррекции формы и контуров
-    .font-regular-moon
-      | ELLANSÉ® предназначен для субдермальных инъекций. Благодаря своей когезивности, ELLANSÉ® может легко приобретать необходимую форму, обеспечивая большую точность при коррекции формы и контуров
-    .image
-      img(src="../../images/header-1.jpg")
-    .svg 
-      include ../../images/svg/sinclair.svg
-    a(href="./second-page.pug")
-      | second-page
+    section.header
+      .container
+        video#bgvid.main-video(playsinline='' autoplay='' muted='' loop='' poster='../../images/video_bg-min.jpg')
+          source(src='../../video/zhara.webm' type='video/webm')
+          source(src='../../video/zhara.mp4' type='video/mp4')
+        nav.nav
+          a.menu-btn
+            span.span
+          ul.menu
+            li
+              a(href='#band') Команда
+            li
+              a(href='#about') О нас
+            li
+              a(href='#gallery') Галерея
+            li
+              a(href='#contacts') Контакты
+            li
+              a(href='#materials') Материалы
+            li
+              a.phone(href='tel:+7(950)851-06-06') +7(950)851-06-06
+          ul.menu-mobile
+            li
+              a(href='#band') Команда
+            li
+              a(href='#about') О нас
+            li
+              a(href='#gallery') Галерея
+            li
+              a(href='#contacts') Контакты
+            li
+              a(href='#materials') Материалы
+            li
+              a.phone(href='tel:+7(950)851-06-06') +7(950)851-06-06
+        .header_main-content
+          .header-logo
+            img(src='../../images/header/Zhara_logo.png' alt='Кавер-группа Жара')
+          .header-logo2
+            img(src='../../images/header/Zhara_logo2.png' alt='Кавер-группа Жара')
+          .header-title
+            h1 Кавер-группа ЖАРА
+          .header-description
+            | Мы заботимся о том, чтобы каждое мероприятие, в котором
+            | мы участвуем, было обеспечено полноценным живым концертом,
+            | качественным звуком и зажигательным исполнением самых
+            | горячих хитов.
+          .header-fromto
+            .header-fromto_lounge
+              | от
+              br
+              | лаунжа
+            .header-fromto_rock
+              | до
+              br
+              | рок-концерта
+
+          .header-button
+            a(href='#button' onclick="ym(51930935, 'reachGoal', 'topBtn'); return true;")
+              | Заказать группу
+            .header-contacts
+              .header-contacts_socials
+                .header-contact_socials__icon
+                  a(href='https://vk.com/jara_showgroup')
+                    img(src='../../images/footer/vk.png' alt='vk')
+                .header-contact_socials__icon
+                  a(href='https://www.youtube.com/channel/UCRsndQj_oTQxOCn6e62hXaA')
+                    img(src='../../images/footer/youtube.png' alt='youtube')
+                .header-contact_socials__icon
+                  a(href='https://www.instagram.com/jara_showgroup/?hl=ru')
+                    img(src='../../images/footer/insta.png' alt='insta')
+                .header-contact_socials__icon
+                  a(href='https://www.facebook.com/groups/jaragroup/')
+                    img(src='../../images/footer/facebook.png' alt='facebook')
+    section.header-mobile
+      .header-mobile_description
+        | Мы заботимся о том, чтобы каждое мероприятие, в котором
+        | мы участвуем, было обеспечено полноценным живым концертом,
+        | качественным звуком и зажигательным исполнением самых
+        | горячих хитов.
+      .header-mobile_fromto
+        .header-mobile_fromto__lounge
+          | от
+          br
+          | лаунжа
+        .header-mobile_fromto__rock
+          | до
+          br
+          | рок-концерта
+      .header-mobile_button
+        a(href='#button')
+          | Заказать группу
+    section.voice
+      .container
+        .voice-wrapper
+          .voice-title
+            | Смотрите "Голос"?
+          .voice-description
+            | Наш вокалист Виктор Иванов отметился участием в Шоу "Голос-7" на Первом Канале. И хоть к Вите
+            | никто не повернулся,
+            | выступение получилось драматичным и трогательным, а наставники явно пожалели о своем решении...
+            | Посмотрите сами!
+          .voice-video
+            iframe(width='560' height='315' src='https://www.youtube.com/embed/8oXpmmWRQtQ' frameborder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen='')
+    .section.section-band
+      .container
+        #band.band
+          .about
+            .about-title
+              h2 Команда
+            .about-description
+              | Мы имеем богатый опыт не только танцевальных и угарных концертов
+              | на свадьбах, корпоративах, банкетах,
+              | в клубах и на больших сценах,
+              | но и ненавязчивого музыкального оформления инвайтов, презентаций.
+              br
+              br
+              | Мы готовы выступить в любой
+              | точке страны, возможен выезд
+              | со своим оборудованием. Все
+              | технические и организационные
+              | вопросы оговариваются
+              | индивидуально.
+          .member
+            .member-img
+              img(src='../../images/band/vic2.png' alt='Виктор Иванов')
+            .member-name
+              | Виктор Иванов
+            .member-regals
+              | Вокал
+          .member
+            .member-img
+              img(src='../../images/band/shue2.png' alt='Александр Шубенков')
+            .member-name
+              | Александр Шубенков
+            .member-regals
+              | Бас-гитара
+          .member
+            .member-img
+              img(src='../../images/band/lavr2.png' alt='Евгений Лаврентьев')
+            .member-name
+              | Евгений Лаврентьев
+            .member-regals
+              | Саксофон
+          .member
+            .member-img
+              img(src='../../images/band/jigan2.png' alt='Вячеслав Мукко')
+            .member-name
+              | Вячеслав Мукко
+            .member-regals
+              | Гитара
+          .member
+            .member-img
+              img(src='../../images/band/chel3.png' alt='Александр Черногоров')
+            .member-name
+              | Александр Черногоров
+            .member-regals
+              | Барабаны
+
+    section.features
+      .container.features
+        .features-lines
+          a#about
+          .features-line1
+            .block-sound
+              | Живой 
+              br
+              |  Звук
+            .block-energy2
+              .block-energy2_title
+                | Энергичная подача 
+                br
+                | на сцене:
+              .block-energy2_subtitle
+                | Каждый раз
+                | играем как
+                | последний
+              hr
+              .block-vox2
+                .block-vox2_title
+                  | Мощный
+                  | профессиональный
+                  br
+                  | вокал
+                .block-vox2_subtitle
+                  | Виктор Иванов — победитель городских и всероссийских конкурсов, полуфиналист
+                  | международного конкурса «Новая Волна», участник проекта "Голос 7"
+            .block-programms
+              .block-programms_title
+                | Две программы
+              .block-programms_variants
+                .variant1
+                  span 1
+                  .variant1-descr
+                    | драйвовая 
+                    br
+                    | танцевальная 
+                    br
+                    | тотальная жара
+                .variant2
+                  span 2
+                  .variant2-descr
+                    i лаундж
+                    br
+                    | подходит для Велком зон и заведений
+                    | с сидящей публикой
+            .block-repertoire
+              .block-repertoire_title
+                | Ну очень большой репертуар,
+              .block-repertoire_descr
+                | который постоянно расширяется. Вы можете сами подбирать плейлист на ваше мероприятие
+          .features-line2
+            .block-energy
+              .block-energy_title
+                | Энергичная подача 
+                br
+                | на сцене:
+              .block-energy_subtitle
+                | Каждый раз
+                | играем как
+                | последний:
+                | никто не уйдет сухим
+              hr
+              .block-vox
+                .block-vox_title
+                  | Мощный
+                  | профессиональный
+                  br
+                  | вокал
+                .block-vox_subtitle
+                  | Виктор Иванов — победитель городских и всероссийских конкурсов, полуфиналист
+                  | международного конкурса «Новая Волна», участник телепроекта "Голос 7" на Первом Канале
+            .block-concerts
+              .block-concerts_title
+                span 1500+
+                br
+                | концертов, на которых мы
+              .block-concerts_descr
+                .block-concerts_descr1
+                  | Интеллигентно 
+                  br
+                  | взаимодействуем 
+                  br
+                  | с публикой :
+                .block-concerts_descr2
+                  | не водим хороводы, 
+                  br
+                  | не прыгаем по столам, 
+                  br
+                  | не нарушаем личное пространство 
+                  br
+              hr(color='#ff7c7c')
+              .block-concerts_descr3
+                i Уместный
+                |  интерактив
+            .block-repertoire2
+              .block-repertoire2_title
+                | Ну очень большой репертуар,
+              .block-repertoire2_descr
+                | который постоянно расширяется. Вы можете сами подбирать плейлист на ваше мероприятие
+              .block-power2
+                .block-power2_descr1
+                  | Сила и успех нашей команды
+                  | в невероятной химии и дружбе между участниками коллектива.
+                .block-power2_descr2
+                  | Каждый музыкант в группе — яркая харизматичная личность.
+            .block-punctuation
+              .block-punctuation_img
+                img(src='../../images/features/rabbit-logo.png' alt='Кролик')
+              hr
+              .block-punctuation_title
+                | Никогда не
+                | опаздываем
+              .block-punctuation_subtitle
+                | Приедем на ваше мероприятие за полчаса до оговоренного времени
+          .features-line3
+            .block-dotes
+              img(src='../../images/features/dote.png' alt='Завитушка')
+            .block-everywhere
+              .block-everywhere_title
+                | Куда угодно
+              .block-everywhere_subtitle
+                | выезд в любую точку 
+                br
+                | страны, мира, 
+                br
+                | вселенной
+            .block-power
+              .block-power_descr1
+                | Сила и успех нашей команды
+                | в невероятной химии и дружбе между участниками коллектива.
+              .block-power_descr2
+                | Каждый музыкант в группе — яркая харизматичная личность.
+    section.dance
+      .section-title
+        | Первый свадебный танец
+      .dance-description
+        | Первый танец молодоженов под песню, включенную на компьютере - прошлый век.
+        | Другое дело, когда этот волшебный момент поддерживает живая музыка. 
+        br
+        br
+        | Мы предлагаем вам соединиться в вашем первом свадебном танце под наш живой аккомпанемент.
+        | Наш богатый опыт и профессионализм дает вам возможность выбрать ЛЮБУЮ песню, вашу самую любимую композицию, и мы
+        | ее для вас подготовим. 
+        br
+        br
+        | В момент танца, вся музыкальная часть будет записываться на наше оборудование, так что после свадьбы мы отдадим
+        | вам запись, чтобы у вашего видеографа был качественный аудио материал. 
+        br
+        br
+        | И самое главное! Эта услуга АБСОЛЮТНО БЕСПЛАТНАЯ!!! 
+        br
+        br
+        | А сейчас посмотрите как это может быть красиво!
+      .voice-video
+        iframe(width='560' height='315' src='https://www.youtube.com/embed/J6U4pI83cSY' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen='')
+    section.media
+      a#gallery
+      .media-title
+        | Галерея
+      .wrapper
+        .tabs
+          span.tab Фото
+          span.tab Видео
+        .tab_content
+          .tab_item
+            .photo-galery
+              #lightgallery
+                a(href='../../images/gallery/big/01.jpg')
+                  img(src='../../images/gallery/big/01.jpg')
+                a(href='../../images/gallery/big/02.jpg')
+                  img(src='../../images/gallery/big/02.jpg')
+                a(href='../../images/gallery/big/03.jpg')
+                  img(src='../../images/gallery/big/03.jpg')
+                a(href='../../images/gallery/big/04.jpg')
+                  img(src='../../images/gallery/big/04.jpg')
+                a(href='../../images/gallery/big/05.jpg')
+                  img(src='../../images/gallery/big/05.jpg')
+                a(href='../../images/gallery/big/06.jpg')
+                  img(src='../../images/gallery/big/06.jpg')
+                a(href='../../images/gallery/big/07.jpg')
+                  img(src='../../images/gallery/big/07.jpg')
+                a(href='../../images/gallery/big/08.jpg')
+                  img(src='../../images/gallery/big/08.jpg')
+                a(href='../../images/gallery/big/09.jpg')
+                  img(src='../../images/gallery/big/09.jpg')
+                a(href='../../images/gallery/big/10.jpg')
+                  img(src='../../images/gallery/big/10.jpg')
+                a(href='../../images/gallery/big/11.jpg')
+                  img(src='../../images/gallery/big/11.jpg')
+                a(href='../../images/gallery/big/12.jpg')
+                  img(src='../../images/gallery/big/12.jpg')
+                a(href='../../images/gallery/big/13.jpg')
+                  img(src='../../images/gallery/big/13.jpg')
+                a(href='../../images/gallery/big/14.jpg')
+                  img(src='../../images/gallery/big/14.jpg')
+                a(href='../../images/gallery/big/15.jpg')
+                  img(src='../../images/gallery/big/15.jpg')
+                a(href='../../images/gallery/big/16.jpg')
+                  img(src='../../images/gallery/big/16.jpg')
+                a(href='../../images/gallery/big/17.jpg')
+                  img(src='../../images/gallery/big/17.jpg')
+                a(href='../../images/gallery/big/18.jpg')
+                  img(src='../../images/gallery/big/18.jpg')
+                a(href='../../images/gallery/big/19.jpg')
+                  img(src='../../images/gallery/big/19.jpg')
+      
+            .photo-galery
+              #lightgallery2
+                a(href='../../images/gallery/big2/01.jpg')
+                  img(src='../../images/gallery/big2/01.jpg')
+                a(href='../../images/gallery/big2/02.jpg')
+                  img(src='../../images/gallery/big2/02.jpg')
+                a(href='../../images/gallery/big2/03.jpg')
+                  img(src='../../images/gallery/big2/03.jpg')
+                a(href='../../images/gallery/big2/04.jpg')
+                  img(src='../../images/gallery/big2/04.jpg')
+                a(href='../../images/gallery/big2/05.jpg')
+                  img(src='../../images/gallery/big2/05.jpg')
+                a(href='../../images/gallery/big2/06.jpg')
+                  img(src='../../images/gallery/big2/06.jpg')
+                a(href='../../images/gallery/big2/07.jpg')
+                  img(src='../../images/gallery/big2/07.jpg')
+                a(href='../../images/gallery/big2/08.jpg')
+                  img(src='../../images/gallery/big2/08.jpg')
+                a(href='../../images/gallery/big2/09.jpg')
+                  img(src='../../images/gallery/big2/09.jpg')
+                a(href='../../images/gallery/big2/10.jpg')
+                  img(src='../../images/gallery/big2/10.jpg')
+                a(href='../../images/gallery/big2/11.jpg')
+                  img(src='../../images/gallery/big2/11.jpg')
+                a(href='../../images/gallery/big2/12.jpg')
+                  img(src='../../images/gallery/big2/12.jpg')
+                a(href='../../images/gallery/big2/13.jpg')
+                  img(src='../../images/gallery/big2/13.jpg')
+                a(href='../../images/gallery/big2/14.jpg')
+                  img(src='../../images/gallery/big2/14.jpg')
+                a(href='../../images/gallery/big2/15.jpg')
+                  img(src='../../images/gallery/big2/15.jpg')
+                a(href='../../images/gallery/big2/16.jpg')
+                  img(src='../../images/gallery/big2/16.jpg')
+                a(href='../../images/gallery/big2/17.jpg')
+                  img(src='../../images/gallery/big2/17.jpg')
+                a(href='../../images/gallery/big2/18.jpg')
+                  img(src='../../images/gallery/big2/18.jpg')
+                a(href='../../images/gallery/big2/19.jpg')
+                  img(src='../../images/gallery/big2/19.jpg')
+              
+
+
+          .tab_item
+            .gallery_video
+              .video.video_1
+                iframe(src='https://www.youtube.com/embed/ezZ6SK9yEa8' allow='autoplay; encrypted-media' allowfullscreen='')
+              .video.video_2
+                iframe(width='560' height='315' src='https://www.youtube.com/embed/OGLkl6Y8BDQ' frameborder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen='')
+              .video.video_3
+                iframe(width='560' height='315' src='https://www.youtube.com/embed/EZxt30YdPDo' frameborder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen='')
+              .video.video_4
+                iframe(width='560' height='315' src='https://www.youtube.com/embed/u91m-HGtLXQ' frameborder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen='')
+              .video.video_5
+                iframe(width='560' height='315' src='https://www.youtube.com/embed/iHvgYmFf27g' frameborder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen='')
+              .video.video_6
+                iframe(width='560' height='315' src='https://www.youtube.com/embed/J6U4pI83cSY' frameborder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen='')
+              .video.video_7
+                iframe(src='https://www.youtube.com/embed/UvXtLEJWC_k' allow='autoplay; encrypted-media' allowfullscreen='')
+              .video.video_8
+                iframe(width='560' height='315' src='https://www.youtube.com/embed/92kQGbDfVns' frameborder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen='')
+
+    .section-clients
+      .container
+        h2
+          | Нам доверяют
+        .clients
+          .clients-block
+            img(src='../../images/clients/alfa.png' alt='Альфастрахование')
+          .clients-block
+            img(src='../../images/clients/gazprom.png' alt='Газпром')
+          .clients-block
+            img(src='../../images/clients/rzd.png' alt='РЖД')
+          .clients-block
+            img(src='../../images/clients/vtb.png' alt='ВТБ')
+          .clients-block
+            img(src='../../images/clients/titul.png' alt='Титул')
+          .clients-block
+            img(src='../../images/clients/sberbank.png' alt='Сбербанк')
+          .clients-block
+            img(src='../../images/clients/Modus.png' alt='Модус')
+          .clients-block
+            img(src='../../images/clients/ctc.png' alt='СТС')
+          .clients-block.etc
+            | и многие другие
+
+    section.materials
+      a#materials
+      .section-title.dop-mat Дополнительные материалы
+      .links__wrapper
+        a(href='../../files/zhara-raider.docx' download='') скачать технический райдер
+        a(href='../../files/zhara-repertuar.docx' download='') скачать репертуар
+
+    footer.section-footer
+      .container
+        .footer-wrap
+          .footer-wrap_left
+            .footer-wrap_left__title
+              h2 Контакты
+            .contacts
+              a#contacts
+              .contacts-left
+                .contacts-socials
+                  .contact-socials_icon
+                    a(href='https://vk.com/jara_showgroup')
+                      img(src='../../images/footer/vk.png' alt='vk')
+                  .contact-socials_icon
+                    a(href='https://www.youtube.com/channel/UCRsndQj_oTQxOCn6e62hXaA')
+                      img(src='../../images//footer/youtube.png' alt='youtube')
+                  .contact-socials_icon
+                    a(href='https://www.instagram.com/jara_showgroup/?hl=ru')
+                      img(src='../../images//footer/insta.png' alt='insta')
+                  .contact-socials_icon
+                    a(href='https://www.facebook.com/groups/jaragroup/')
+                      img(src='../../images//footer/facebook.png' alt='facebook')
+                .contacts-call
+                  .contacts-call_title
+                    | Организация концертов
+                  a.contacts-call_phone(href='tel:+7(950)851-06-06') +7 (950) 851-06-06
+              .contacts-right
+                .contacts-right_descr
+                  | Звоните, пишите в WhatsApp — мы открыты для обсуждения - зачастую финансовые и
+                  | организационные детали зависят от времени, дня и места проведения мероприятия. Также,
+                  | при необходимости, можем порекомендовать лучших ведущих, декораторов, фотографов,
+                  | прокатчиков звукового и светового оборудования, проверенных на многих мероприятиях.
+          .footer-wrap_right
+            .footer-wrap_right__title
+              a#button
+                h2
+                  | Заказать 
+                  br
+                  |  группу ЖАРА
+            script.
+              var submitted = false;
+            iframe#hidden_iframe(name='hidden_iframe' style='display:none;' onload="if(submitted) {\
+            $('.js-overlay-thank-you').fadeIn()\
+            }")
+            form#form.form(action='https://docs.google.com/forms/d/e/1FAIpQLSd_RUxvBno5MjfyqbkCOE8dUdpqpBa8Yn_sHLgyWyINay8a7g/formResponse' method='post' target='hidden_iframe' onsubmit='submitted=true;')
+              input#name.form-name(name='entry.414013984' placeholder='Введите Имя' type='text' required='')
+              input#phone.form-phone(name='entry.527647091' placeholder='Введите Телефон' type='tel' maxlength='17' required='')
+              button.form-button(value='Отправить') Отправить
+            .overlay.js-overlay-thank-you
+              .popup.js-thank-you
+                h2 Спасибо за заявку. Мы свяжемся с Вами в скором времени!
+                .close-popup.js-close-thank-you
+
