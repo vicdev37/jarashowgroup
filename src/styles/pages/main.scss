@@ -13,9 +13,6 @@
 }
 
 
-
-
-
 * {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
@@ -1458,12 +1455,13 @@ a.asoc {
         a { 
             display: inline-block;
             vertical-align: top;
-            width: 450px;
+            max-width: 450px;
             height: 300px;
             margin-left: 10px;
             img {
                 width: 100%;
                 height: 100%;
+                object-fit: cover;
             }
         }
     }
@@ -1731,9 +1729,18 @@ a.asoc {
     .contacts-socials {
         margin-left: -8px;
     }
+    .dance {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .form {
+        padding: 16px;
+    }
 }
 
 @media (max-width: 767px) {
+   
     .menu {
         right: 7px;
     }
@@ -1794,8 +1801,7 @@ a.asoc {
         #lightgallery2 {
             margin-left: 0;
             a {
-                width: 100%;
-                height: 206px;
+                height: 215px;
             }
         }
     }
@@ -1950,7 +1956,7 @@ a.asoc {
     }
 
     .voice-video {
-        height: inherit;
+        height: fit-content;
     }
 }
 

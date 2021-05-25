@@ -6,8 +6,6 @@ import Swal from 'sweetalert2'
 
 
 window.$ = window.jQuery = jquery;
-
-
 $(document).ready(function () {
   lightGallery(document.getElementById('lightgallery'), {
     mode: 'lg-fade',
@@ -39,35 +37,13 @@ $(document).ready(function () {
   $('#phone').mask('+7 (000) 000-00-00');
 
   $(".menu, .header-button, .header-mobile_button").on("click", "a", function (event) {
-    //отменяем стандартную обработку нажатия по ссылке
     event.preventDefault();
-    //забираем идентификатор бока с атрибута href
     var id = $(this).attr('href'),
-      //узнаем высоту от начала страницы до блока на который ссылается якорь
       top = $(id).offset().top;
-    //анимируем переход на расстояние - top за 1500 мс
     $('body,html').animate({
       scrollTop: top
     }, 1500);
   });
-
-  // Отправка заявки 
-  // $('#form').submit(function (evt) { // проверка на пустоту заполненных полей. Атрибут html5 — required не подходит (не поддерживается Safari)
-  // 	console.log('Скрипт тоже работает!');
-  // 	// evt.preventDefault()
-  // });
-  // // Закрыть попап «спасибо»
-  // $('.js-close-thank-you').click(function () { // по клику на крестик
-  // 	$('.js-overlay-thank-you').fadeOut();
-  // });
-  // $(document).mouseup(function (e) { // по клику вне попапа
-  // 	var popup = $('.popup');
-  // 	if (e.target != popup[0] && popup.has(e.target).length === 0) {
-  // 		$('.js-overlay-thank-you').fadeOut();
-  // 	}
-  // });
-  // Маска ввода номера телефона (плагин maskedinput)
-
 
 
   $('#form').on('submit', function (event) {
