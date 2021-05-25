@@ -41,8 +41,23 @@ block content
             img(src='../../images/header/Zhara_logo.png' alt='Кавер-группа Жара')
           .header-logo2
             img(src='../../images/header/Zhara_logo2.png' alt='Кавер-группа Жара')
-          .header-title
-            h1 Кавер-группа ЖАРА
+          .header-title__wrapper  
+            .header-title
+              h1 Кавер-группа ЖАРА
+            .header-contacts
+              .header-contacts_socials
+                .header-contact_socials__icon
+                  a(href='https://vk.com/jara_showgroup')
+                    img(src='../../images/footer/vk.png' alt='vk')
+                .header-contact_socials__icon
+                  a(href='https://www.youtube.com/channel/UCRsndQj_oTQxOCn6e62hXaA')
+                    img(src='../../images/footer/youtube.png' alt='youtube')
+                .header-contact_socials__icon
+                  a(href='https://www.instagram.com/jara_showgroup/?hl=ru')
+                    img(src='../../images/footer/insta.png' alt='insta')
+                .header-contact_socials__icon
+                  a(href='https://www.facebook.com/groups/jaragroup/')
+                    img(src='../../images/footer/facebook.png' alt='facebook')  
           .header-description
             | Мы заботимся о том, чтобы каждое мероприятие, в котором
             | мы участвуем, было обеспечено полноценным живым концертом,
@@ -61,26 +76,27 @@ block content
           .header-button
             a(href='#button' onclick="ym(51930935, 'reachGoal', 'topBtn'); return true;")
               | Заказать группу
-            .header-contacts
-              .header-contacts_socials
-                .header-contact_socials__icon
-                  a(href='https://vk.com/jara_showgroup')
-                    img(src='../../images/footer/vk.png' alt='vk')
-                .header-contact_socials__icon
-                  a(href='https://www.youtube.com/channel/UCRsndQj_oTQxOCn6e62hXaA')
-                    img(src='../../images/footer/youtube.png' alt='youtube')
-                .header-contact_socials__icon
-                  a(href='https://www.instagram.com/jara_showgroup/?hl=ru')
-                    img(src='../../images/footer/insta.png' alt='insta')
-                .header-contact_socials__icon
-                  a(href='https://www.facebook.com/groups/jaragroup/')
-                    img(src='../../images/footer/facebook.png' alt='facebook')
+          
     section.header-mobile
       .header-mobile_description
         | Мы заботимся о том, чтобы каждое мероприятие, в котором
         | мы участвуем, было обеспечено полноценным живым концертом,
         | качественным звуком и зажигательным исполнением самых
         | горячих хитов.
+      .header-contacts.mobile
+        .header-contacts_socials
+          .header-contact_socials__icon
+            a(href='https://vk.com/jara_showgroup')
+              img(src='../../images/footer/vk.png' alt='vk')
+          .header-contact_socials__icon
+            a(href='https://www.youtube.com/channel/UCRsndQj_oTQxOCn6e62hXaA')
+              img(src='../../images/footer/youtube.png' alt='youtube')
+          .header-contact_socials__icon
+            a(href='https://www.instagram.com/jara_showgroup/?hl=ru')
+              img(src='../../images/footer/insta.png' alt='insta')
+          .header-contact_socials__icon
+            a(href='https://www.facebook.com/groups/jaragroup/')
+              img(src='../../images/footer/facebook.png' alt='facebook')   
       .header-mobile_fromto
         .header-mobile_fromto__lounge
           | от
